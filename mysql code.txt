@@ -1,0 +1,20 @@
+show databases;
+create database nov_project_day_1;
+use nov_project_day_1;
+create table cust_basic_details(
+sl_no int primary key auto_increment not null,
+full_name varchar(100) not null,
+address varchar(100) not null,
+ph_no varchar(10) not null,
+user_id varchar(100) not null,
+password varchar(100) not null)auto_increment=1;
+
+insert into cust_basic_details(full_name,address,ph_no,user_id,password)
+values("Rajdeep Bhadra","Halisahar","8652541285","Raj123","Raj8899");
+
+select * from cust_basic_details;
+
+truncate table cust_basic_details;
+
+SELECT * FROM cust_basic_details
+where user_id='RAJ123';
